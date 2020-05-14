@@ -23,5 +23,40 @@ namespace ProjectDatamanipulatieAnime_WPF
         {
             InitializeComponent();
         }
+
+        private void BtnExit_Click(object sender, RoutedEventArgs e)
+        {
+
+            System.Windows.Application.Current.Shutdown();
+
+        }
+
+        private void BtnHome_Click(object sender, RoutedEventArgs e)
+        {
+            Window Home = new MainWindow();
+            Home.Show();
+            this.Close();
+        }
+
+        private void BtnManga_Click(object sender, RoutedEventArgs e)
+        {
+            Window Manga = new MangaWindow();
+            Manga.Show();
+            this.Close();
+        }
+
+        private void BtnIndustrie_Click(object sender, RoutedEventArgs e)
+        {
+            //Window Industrie = new IndustrieWindow();
+            // Industrie.Show();
+            //this.Close();
+        }
+
+        private void BtnGenre_Click(object sender, RoutedEventArgs e)
+        {
+            //Window Genre = new GenreWindow();
+            //Genre.Show();
+            //this.Close();
+        }
     }
 }

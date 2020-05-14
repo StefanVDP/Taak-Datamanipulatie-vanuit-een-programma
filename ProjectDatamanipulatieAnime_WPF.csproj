@@ -71,6 +71,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="MangaWindow.xaml.cs">
+      <DependentUpon>MangaWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SerieOverview.xaml.cs">
+      <DependentUpon>SerieOverview.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SerieWindow.xaml.cs">
       <DependentUpon>SerieWindow.xaml</DependentUpon>
     </Compile>
@@ -89,6 +95,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MangaWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SerieOverview.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SerieWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
